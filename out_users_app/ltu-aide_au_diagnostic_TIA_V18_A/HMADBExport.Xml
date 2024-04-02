@@ -1,0 +1,5286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <DocumentInfo>
+    <Created>2024-02-15T13:16:19.4089202Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V18 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V18 Update 3</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Test Suite Advanced</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V18 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 CFC</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V18</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced / Unified PC</DisplayName>
+        <DisplayVersion>V18 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SIMATIC Visualization Architect</DisplayName>
+        <DisplayVersion>V18 Update 3</DisplayVersion>
+      </OptionPackage>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>COM_8864079</Name>
+      <Namespace />
+      <Number>36</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P1_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P1_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P2_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P2_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P3_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P3_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P4_EVM_EGF" />
+        <Component Name="iCmdAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P4_EVM_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P4'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P5_EVM_EGF" />
+        <Component Name="iCmdAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P5_EVM_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P5'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P6_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P6_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P6'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P7_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P7_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P7'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="PF_P8_EVE_LIQU" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PF_P8_EVE_LIQU" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="47">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="48">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="PF_P9_EVM_EGF" />
+        <Component Name="iCmdAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="PF_P9_EVM_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P9'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="PF_P10_1_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="PF_P10_1_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P10.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="PF_P10_2_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="PF_P10_2_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="58">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P10.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="PF_P10_3_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="PF_P10_3_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="61">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P10.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="62">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="PF_P11_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="PF_P11_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="65">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P11'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="66">
+      <Symbol>
+        <Component Name="PF_P12_1_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="67">
+      <Symbol>
+        <Component Name="PF_P12_1_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="68">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P12.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="69">
+      <Symbol>
+        <Component Name="PF_P12_2_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="70">
+      <Symbol>
+        <Component Name="PF_P12_2_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="71">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P12.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="72">
+      <Symbol>
+        <Component Name="PF_P12_3_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="PF_P12_3_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="74">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="75">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="76">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="77">
+      <Symbol>
+        <Component Name="PF_P13_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="78">
+      <Symbol>
+        <Component Name="PF_P13_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="79">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P13'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="80">
+      <Symbol>
+        <Component Name="PF_P14_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="81">
+      <Symbol>
+        <Component Name="PF_P14_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="82">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P14'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="83">
+      <Symbol>
+        <Component Name="PF_P15_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="84">
+      <Symbol>
+        <Component Name="PF_P15_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="85">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P15'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="86">
+      <Symbol>
+        <Component Name="PF_P16_EVE_EGF" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="87">
+      <Symbol>
+        <Component Name="PF_P16_EVE_EGF" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="88">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd froid P16'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="89">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="90">
+      <Symbol>
+        <Component Name="GEN_CLIM_BUR_VT_EECH" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="91">
+      <Symbol>
+        <Component Name="GEN_CLIM_BUR_VT_EECH" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="92">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd Clim Bur'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="93">
+      <Symbol>
+        <Component Name="COM_IL_DMD_FROID1" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="94">
+      <Symbol>
+        <Component Name="COM_IL_DMD_FROID1" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="95">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'dem frd poste 1-8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="96">
+      <Symbol>
+        <Component Name="COM_IL_DMD_FROID2" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="97">
+      <Symbol>
+        <Component Name="COM_IL_DMD_FROID2" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="98">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'dem frd poste 9-12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="99">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="100">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="DdeFroidEGF" />
+      </Symbol>
+    </Access>
+    <Call UId="101">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="102">
+          <Component Name="COM_IL_DMD_FROID1" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="103">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="104">
+          <Component Name="COM_IL_DMD_FROID2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="105">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="106">
+          <Component Name="COM_IL_DMD_FROID3" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="159">
+      <Powerrail />
+      <NameCon UId="101" Name="en" />
+      <NameCon UId="105" Name="en" />
+    </Wire>
+    <Wire UId="160">
+      <OpenCon UId="107" />
+      <NameCon UId="101" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="161">
+      <OpenCon UId="108" />
+      <NameCon UId="101" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="21" />
+      <NameCon UId="101" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="22" />
+      <NameCon UId="101" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="164">
+      <IdentCon UId="23" />
+      <NameCon UId="101" Name="iIn1" />
+    </Wire>
+    <Wire UId="165">
+      <IdentCon UId="24" />
+      <NameCon UId="101" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="166">
+      <OpenCon UId="109" />
+      <NameCon UId="101" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="25" />
+      <NameCon UId="101" Name="iText1" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="26" />
+      <NameCon UId="101" Name="iIn2" />
+    </Wire>
+    <Wire UId="169">
+      <IdentCon UId="27" />
+      <NameCon UId="101" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="170">
+      <OpenCon UId="110" />
+      <NameCon UId="101" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="28" />
+      <NameCon UId="101" Name="iText2" />
+    </Wire>
+    <Wire UId="172">
+      <IdentCon UId="29" />
+      <NameCon UId="101" Name="iIn3" />
+    </Wire>
+    <Wire UId="173">
+      <IdentCon UId="30" />
+      <NameCon UId="101" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="174">
+      <OpenCon UId="111" />
+      <NameCon UId="101" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="175">
+      <IdentCon UId="31" />
+      <NameCon UId="101" Name="iText3" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="32" />
+      <NameCon UId="101" Name="iIn4" />
+    </Wire>
+    <Wire UId="177">
+      <IdentCon UId="33" />
+      <NameCon UId="101" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="178">
+      <OpenCon UId="112" />
+      <NameCon UId="101" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="34" />
+      <NameCon UId="101" Name="iText4" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="35" />
+      <NameCon UId="101" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="181">
+      <IdentCon UId="36" />
+      <NameCon UId="101" Name="iIn5" />
+    </Wire>
+    <Wire UId="182">
+      <IdentCon UId="37" />
+      <NameCon UId="101" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="183">
+      <OpenCon UId="113" />
+      <NameCon UId="101" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="38" />
+      <NameCon UId="101" Name="iText5" />
+    </Wire>
+    <Wire UId="185">
+      <IdentCon UId="39" />
+      <NameCon UId="101" Name="iIn6" />
+    </Wire>
+    <Wire UId="186">
+      <IdentCon UId="40" />
+      <NameCon UId="101" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="187">
+      <OpenCon UId="114" />
+      <NameCon UId="101" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="188">
+      <IdentCon UId="41" />
+      <NameCon UId="101" Name="iText6" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="42" />
+      <NameCon UId="101" Name="iIn7" />
+    </Wire>
+    <Wire UId="190">
+      <IdentCon UId="43" />
+      <NameCon UId="101" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="191">
+      <OpenCon UId="115" />
+      <NameCon UId="101" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="44" />
+      <NameCon UId="101" Name="iText7" />
+    </Wire>
+    <Wire UId="193">
+      <IdentCon UId="45" />
+      <NameCon UId="101" Name="iIn8" />
+    </Wire>
+    <Wire UId="194">
+      <IdentCon UId="46" />
+      <NameCon UId="101" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="195">
+      <OpenCon UId="116" />
+      <NameCon UId="101" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="196">
+      <IdentCon UId="47" />
+      <NameCon UId="101" Name="iText8" />
+    </Wire>
+    <Wire UId="197">
+      <NameCon UId="101" Name="eno" />
+      <NameCon UId="103" Name="en" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="101" Name="oValid" />
+      <OpenCon UId="117" />
+    </Wire>
+    <Wire UId="199">
+      <NameCon UId="101" Name="oBusy" />
+      <OpenCon UId="118" />
+    </Wire>
+    <Wire UId="200">
+      <NameCon UId="101" Name="oError" />
+      <OpenCon UId="119" />
+    </Wire>
+    <Wire UId="201">
+      <NameCon UId="101" Name="oStatus" />
+      <OpenCon UId="120" />
+    </Wire>
+    <Wire UId="202">
+      <NameCon UId="101" Name="oDiagnostic" />
+      <OpenCon UId="121" />
+    </Wire>
+    <Wire UId="203">
+      <NameCon UId="101" Name="oSim" />
+      <OpenCon UId="122" />
+    </Wire>
+    <Wire UId="204">
+      <NameCon UId="101" Name="oOutput" />
+      <OpenCon UId="123" />
+    </Wire>
+    <Wire UId="205">
+      <OpenCon UId="124" />
+      <NameCon UId="103" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="206">
+      <OpenCon UId="125" />
+      <NameCon UId="103" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="207">
+      <IdentCon UId="48" />
+      <NameCon UId="103" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="208">
+      <IdentCon UId="49" />
+      <NameCon UId="103" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="209">
+      <IdentCon UId="50" />
+      <NameCon UId="103" Name="iIn1" />
+    </Wire>
+    <Wire UId="210">
+      <IdentCon UId="51" />
+      <NameCon UId="103" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="211">
+      <OpenCon UId="126" />
+      <NameCon UId="103" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="212">
+      <IdentCon UId="52" />
+      <NameCon UId="103" Name="iText1" />
+    </Wire>
+    <Wire UId="213">
+      <IdentCon UId="53" />
+      <NameCon UId="103" Name="iIn2" />
+    </Wire>
+    <Wire UId="214">
+      <IdentCon UId="54" />
+      <NameCon UId="103" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="215">
+      <OpenCon UId="127" />
+      <NameCon UId="103" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="216">
+      <IdentCon UId="55" />
+      <NameCon UId="103" Name="iText2" />
+    </Wire>
+    <Wire UId="217">
+      <IdentCon UId="56" />
+      <NameCon UId="103" Name="iIn3" />
+    </Wire>
+    <Wire UId="218">
+      <IdentCon UId="57" />
+      <NameCon UId="103" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="219">
+      <OpenCon UId="128" />
+      <NameCon UId="103" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="220">
+      <IdentCon UId="58" />
+      <NameCon UId="103" Name="iText3" />
+    </Wire>
+    <Wire UId="221">
+      <IdentCon UId="59" />
+      <NameCon UId="103" Name="iIn4" />
+    </Wire>
+    <Wire UId="222">
+      <IdentCon UId="60" />
+      <NameCon UId="103" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="223">
+      <OpenCon UId="129" />
+      <NameCon UId="103" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="224">
+      <IdentCon UId="61" />
+      <NameCon UId="103" Name="iText4" />
+    </Wire>
+    <Wire UId="225">
+      <IdentCon UId="62" />
+      <NameCon UId="103" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="226">
+      <IdentCon UId="63" />
+      <NameCon UId="103" Name="iIn5" />
+    </Wire>
+    <Wire UId="227">
+      <IdentCon UId="64" />
+      <NameCon UId="103" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="228">
+      <OpenCon UId="130" />
+      <NameCon UId="103" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="229">
+      <IdentCon UId="65" />
+      <NameCon UId="103" Name="iText5" />
+    </Wire>
+    <Wire UId="230">
+      <IdentCon UId="66" />
+      <NameCon UId="103" Name="iIn6" />
+    </Wire>
+    <Wire UId="231">
+      <IdentCon UId="67" />
+      <NameCon UId="103" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="232">
+      <OpenCon UId="131" />
+      <NameCon UId="103" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="233">
+      <IdentCon UId="68" />
+      <NameCon UId="103" Name="iText6" />
+    </Wire>
+    <Wire UId="234">
+      <IdentCon UId="69" />
+      <NameCon UId="103" Name="iIn7" />
+    </Wire>
+    <Wire UId="235">
+      <IdentCon UId="70" />
+      <NameCon UId="103" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="236">
+      <OpenCon UId="132" />
+      <NameCon UId="103" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="237">
+      <IdentCon UId="71" />
+      <NameCon UId="103" Name="iText7" />
+    </Wire>
+    <Wire UId="238">
+      <IdentCon UId="72" />
+      <NameCon UId="103" Name="iIn8" />
+    </Wire>
+    <Wire UId="239">
+      <IdentCon UId="73" />
+      <NameCon UId="103" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="240">
+      <OpenCon UId="133" />
+      <NameCon UId="103" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="241">
+      <IdentCon UId="74" />
+      <NameCon UId="103" Name="iText8" />
+    </Wire>
+    <Wire UId="242">
+      <NameCon UId="103" Name="oValid" />
+      <OpenCon UId="134" />
+    </Wire>
+    <Wire UId="243">
+      <NameCon UId="103" Name="oBusy" />
+      <OpenCon UId="135" />
+    </Wire>
+    <Wire UId="244">
+      <NameCon UId="103" Name="oError" />
+      <OpenCon UId="136" />
+    </Wire>
+    <Wire UId="245">
+      <NameCon UId="103" Name="oStatus" />
+      <OpenCon UId="137" />
+    </Wire>
+    <Wire UId="246">
+      <NameCon UId="103" Name="oDiagnostic" />
+      <OpenCon UId="138" />
+    </Wire>
+    <Wire UId="247">
+      <NameCon UId="103" Name="oSim" />
+      <OpenCon UId="139" />
+    </Wire>
+    <Wire UId="248">
+      <NameCon UId="103" Name="oOutput" />
+      <OpenCon UId="140" />
+    </Wire>
+    <Wire UId="249">
+      <OpenCon UId="141" />
+      <NameCon UId="105" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="250">
+      <OpenCon UId="142" />
+      <NameCon UId="105" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="251">
+      <IdentCon UId="75" />
+      <NameCon UId="105" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="252">
+      <IdentCon UId="76" />
+      <NameCon UId="105" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="253">
+      <IdentCon UId="77" />
+      <NameCon UId="105" Name="iIn1" />
+    </Wire>
+    <Wire UId="254">
+      <IdentCon UId="78" />
+      <NameCon UId="105" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="255">
+      <OpenCon UId="143" />
+      <NameCon UId="105" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="256">
+      <IdentCon UId="79" />
+      <NameCon UId="105" Name="iText1" />
+    </Wire>
+    <Wire UId="257">
+      <IdentCon UId="80" />
+      <NameCon UId="105" Name="iIn2" />
+    </Wire>
+    <Wire UId="258">
+      <IdentCon UId="81" />
+      <NameCon UId="105" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="259">
+      <OpenCon UId="144" />
+      <NameCon UId="105" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="260">
+      <IdentCon UId="82" />
+      <NameCon UId="105" Name="iText2" />
+    </Wire>
+    <Wire UId="261">
+      <IdentCon UId="83" />
+      <NameCon UId="105" Name="iIn3" />
+    </Wire>
+    <Wire UId="262">
+      <IdentCon UId="84" />
+      <NameCon UId="105" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="263">
+      <OpenCon UId="145" />
+      <NameCon UId="105" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="264">
+      <IdentCon UId="85" />
+      <NameCon UId="105" Name="iText3" />
+    </Wire>
+    <Wire UId="265">
+      <IdentCon UId="86" />
+      <NameCon UId="105" Name="iIn4" />
+    </Wire>
+    <Wire UId="266">
+      <IdentCon UId="87" />
+      <NameCon UId="105" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="267">
+      <OpenCon UId="146" />
+      <NameCon UId="105" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="268">
+      <IdentCon UId="88" />
+      <NameCon UId="105" Name="iText4" />
+    </Wire>
+    <Wire UId="269">
+      <IdentCon UId="89" />
+      <NameCon UId="105" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="270">
+      <IdentCon UId="90" />
+      <NameCon UId="105" Name="iIn5" />
+    </Wire>
+    <Wire UId="271">
+      <IdentCon UId="91" />
+      <NameCon UId="105" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="272">
+      <OpenCon UId="147" />
+      <NameCon UId="105" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="273">
+      <IdentCon UId="92" />
+      <NameCon UId="105" Name="iText5" />
+    </Wire>
+    <Wire UId="274">
+      <IdentCon UId="93" />
+      <NameCon UId="105" Name="iIn6" />
+    </Wire>
+    <Wire UId="275">
+      <IdentCon UId="94" />
+      <NameCon UId="105" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="276">
+      <OpenCon UId="148" />
+      <NameCon UId="105" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="277">
+      <IdentCon UId="95" />
+      <NameCon UId="105" Name="iText6" />
+    </Wire>
+    <Wire UId="278">
+      <IdentCon UId="96" />
+      <NameCon UId="105" Name="iIn7" />
+    </Wire>
+    <Wire UId="279">
+      <IdentCon UId="97" />
+      <NameCon UId="105" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="280">
+      <OpenCon UId="149" />
+      <NameCon UId="105" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="281">
+      <IdentCon UId="98" />
+      <NameCon UId="105" Name="iText7" />
+    </Wire>
+    <Wire UId="282">
+      <IdentCon UId="99" />
+      <NameCon UId="105" Name="iIn8" />
+    </Wire>
+    <Wire UId="283">
+      <OpenCon UId="150" />
+      <NameCon UId="105" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="284">
+      <OpenCon UId="151" />
+      <NameCon UId="105" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="285">
+      <OpenCon UId="152" />
+      <NameCon UId="105" Name="iText8" />
+    </Wire>
+    <Wire UId="286">
+      <NameCon UId="105" Name="oValid" />
+      <OpenCon UId="153" />
+    </Wire>
+    <Wire UId="287">
+      <NameCon UId="105" Name="oBusy" />
+      <OpenCon UId="154" />
+    </Wire>
+    <Wire UId="288">
+      <NameCon UId="105" Name="oError" />
+      <OpenCon UId="155" />
+    </Wire>
+    <Wire UId="289">
+      <NameCon UId="105" Name="oStatus" />
+      <OpenCon UId="156" />
+    </Wire>
+    <Wire UId="290">
+      <NameCon UId="105" Name="oDiagnostic" />
+      <OpenCon UId="157" />
+    </Wire>
+    <Wire UId="291">
+      <NameCon UId="105" Name="oSim" />
+      <OpenCon UId="158" />
+    </Wire>
+    <Wire UId="292">
+      <NameCon UId="105" Name="oOutput" />
+      <IdentCon UId="100" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Demande de Froid</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P1_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P1_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P2_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P2_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P3_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P3_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P8_EVE_LIQU" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P8_EVE_LIQU" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P10_1_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P10_1_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P10.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P10_2_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P10_2_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P10.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P10_3_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P10_3_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P10.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="46">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="PF_P11_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="PF_P11_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P11'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="PF_P12_1_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="PF_P12_1_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P12.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="PF_P12_2_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="PF_P12_2_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P12.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="PF_P12_3_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="PF_P12_3_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="58">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="59">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="PF_P13_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="PF_P13_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="62">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P13'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="PF_P14_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="PF_P14_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="65">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P14'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="66">
+      <Symbol>
+        <Component Name="PF_P15_EVE_EGC" />
+        <Component Name="oAction" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="67">
+      <Symbol>
+        <Component Name="PF_P15_EVE_EGC" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="68">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Dmd deg P15'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="69">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="70">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="71">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="72">
+      <Symbol>
+        <Component Name="COM_IL_DMD_DEG1" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="COM_IL_DMD_DEG1" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="74">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'dem deg poste 1-10.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="75">
+      <Symbol>
+        <Component Name="COM_IL_DMD_DEG2" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="76">
+      <Symbol>
+        <Component Name="COM_IL_DMD_DEG2" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="77">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'dem deg poste 9-12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="78">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="79">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="80">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="81">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="82">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="83">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="84">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="85">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="DdeDegivEGC" />
+      </Symbol>
+    </Access>
+    <Call UId="86">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="87">
+          <Component Name="COM_IL_DMD_DEG1" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="88">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="89">
+          <Component Name="COM_IL_DMD_DEG2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="90">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="91">
+          <Component Name="COM_IL_DMD_DEG3" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="159">
+      <Powerrail />
+      <NameCon UId="86" Name="en" />
+      <NameCon UId="90" Name="en" />
+    </Wire>
+    <Wire UId="160">
+      <OpenCon UId="92" />
+      <NameCon UId="86" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="161">
+      <OpenCon UId="93" />
+      <NameCon UId="86" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="21" />
+      <NameCon UId="86" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="22" />
+      <NameCon UId="86" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="164">
+      <IdentCon UId="23" />
+      <NameCon UId="86" Name="iIn1" />
+    </Wire>
+    <Wire UId="165">
+      <IdentCon UId="24" />
+      <NameCon UId="86" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="166">
+      <OpenCon UId="94" />
+      <NameCon UId="86" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="25" />
+      <NameCon UId="86" Name="iText1" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="26" />
+      <NameCon UId="86" Name="iIn2" />
+    </Wire>
+    <Wire UId="169">
+      <IdentCon UId="27" />
+      <NameCon UId="86" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="170">
+      <OpenCon UId="95" />
+      <NameCon UId="86" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="28" />
+      <NameCon UId="86" Name="iText2" />
+    </Wire>
+    <Wire UId="172">
+      <IdentCon UId="29" />
+      <NameCon UId="86" Name="iIn3" />
+    </Wire>
+    <Wire UId="173">
+      <IdentCon UId="30" />
+      <NameCon UId="86" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="174">
+      <OpenCon UId="96" />
+      <NameCon UId="86" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="175">
+      <IdentCon UId="31" />
+      <NameCon UId="86" Name="iText3" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="32" />
+      <NameCon UId="86" Name="iIn4" />
+    </Wire>
+    <Wire UId="177">
+      <IdentCon UId="33" />
+      <NameCon UId="86" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="178">
+      <OpenCon UId="97" />
+      <NameCon UId="86" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="34" />
+      <NameCon UId="86" Name="iText4" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="35" />
+      <NameCon UId="86" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="181">
+      <IdentCon UId="36" />
+      <NameCon UId="86" Name="iIn5" />
+    </Wire>
+    <Wire UId="182">
+      <IdentCon UId="37" />
+      <NameCon UId="86" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="183">
+      <OpenCon UId="98" />
+      <NameCon UId="86" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="38" />
+      <NameCon UId="86" Name="iText5" />
+    </Wire>
+    <Wire UId="185">
+      <IdentCon UId="39" />
+      <NameCon UId="86" Name="iIn6" />
+    </Wire>
+    <Wire UId="186">
+      <IdentCon UId="40" />
+      <NameCon UId="86" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="187">
+      <OpenCon UId="99" />
+      <NameCon UId="86" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="188">
+      <IdentCon UId="41" />
+      <NameCon UId="86" Name="iText6" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="42" />
+      <NameCon UId="86" Name="iIn7" />
+    </Wire>
+    <Wire UId="190">
+      <IdentCon UId="43" />
+      <NameCon UId="86" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="191">
+      <OpenCon UId="100" />
+      <NameCon UId="86" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="44" />
+      <NameCon UId="86" Name="iText7" />
+    </Wire>
+    <Wire UId="193">
+      <OpenCon UId="101" />
+      <NameCon UId="86" Name="iIn8" />
+    </Wire>
+    <Wire UId="194">
+      <OpenCon UId="102" />
+      <NameCon UId="86" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="195">
+      <OpenCon UId="103" />
+      <NameCon UId="86" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="196">
+      <OpenCon UId="104" />
+      <NameCon UId="86" Name="iText8" />
+    </Wire>
+    <Wire UId="197">
+      <NameCon UId="86" Name="eno" />
+      <NameCon UId="88" Name="en" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="86" Name="oValid" />
+      <OpenCon UId="105" />
+    </Wire>
+    <Wire UId="199">
+      <NameCon UId="86" Name="oBusy" />
+      <OpenCon UId="106" />
+    </Wire>
+    <Wire UId="200">
+      <NameCon UId="86" Name="oError" />
+      <OpenCon UId="107" />
+    </Wire>
+    <Wire UId="201">
+      <NameCon UId="86" Name="oStatus" />
+      <OpenCon UId="108" />
+    </Wire>
+    <Wire UId="202">
+      <NameCon UId="86" Name="oDiagnostic" />
+      <OpenCon UId="109" />
+    </Wire>
+    <Wire UId="203">
+      <NameCon UId="86" Name="oSim" />
+      <OpenCon UId="110" />
+    </Wire>
+    <Wire UId="204">
+      <NameCon UId="86" Name="oOutput" />
+      <OpenCon UId="111" />
+    </Wire>
+    <Wire UId="205">
+      <OpenCon UId="112" />
+      <NameCon UId="88" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="206">
+      <OpenCon UId="113" />
+      <NameCon UId="88" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="207">
+      <IdentCon UId="45" />
+      <NameCon UId="88" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="208">
+      <IdentCon UId="46" />
+      <NameCon UId="88" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="209">
+      <IdentCon UId="47" />
+      <NameCon UId="88" Name="iIn1" />
+    </Wire>
+    <Wire UId="210">
+      <IdentCon UId="48" />
+      <NameCon UId="88" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="211">
+      <OpenCon UId="114" />
+      <NameCon UId="88" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="212">
+      <IdentCon UId="49" />
+      <NameCon UId="88" Name="iText1" />
+    </Wire>
+    <Wire UId="213">
+      <IdentCon UId="50" />
+      <NameCon UId="88" Name="iIn2" />
+    </Wire>
+    <Wire UId="214">
+      <IdentCon UId="51" />
+      <NameCon UId="88" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="215">
+      <OpenCon UId="115" />
+      <NameCon UId="88" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="216">
+      <IdentCon UId="52" />
+      <NameCon UId="88" Name="iText2" />
+    </Wire>
+    <Wire UId="217">
+      <IdentCon UId="53" />
+      <NameCon UId="88" Name="iIn3" />
+    </Wire>
+    <Wire UId="218">
+      <IdentCon UId="54" />
+      <NameCon UId="88" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="219">
+      <OpenCon UId="116" />
+      <NameCon UId="88" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="220">
+      <IdentCon UId="55" />
+      <NameCon UId="88" Name="iText3" />
+    </Wire>
+    <Wire UId="221">
+      <IdentCon UId="56" />
+      <NameCon UId="88" Name="iIn4" />
+    </Wire>
+    <Wire UId="222">
+      <IdentCon UId="57" />
+      <NameCon UId="88" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="223">
+      <OpenCon UId="117" />
+      <NameCon UId="88" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="224">
+      <IdentCon UId="58" />
+      <NameCon UId="88" Name="iText4" />
+    </Wire>
+    <Wire UId="225">
+      <IdentCon UId="59" />
+      <NameCon UId="88" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="226">
+      <IdentCon UId="60" />
+      <NameCon UId="88" Name="iIn5" />
+    </Wire>
+    <Wire UId="227">
+      <IdentCon UId="61" />
+      <NameCon UId="88" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="228">
+      <OpenCon UId="118" />
+      <NameCon UId="88" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="229">
+      <IdentCon UId="62" />
+      <NameCon UId="88" Name="iText5" />
+    </Wire>
+    <Wire UId="230">
+      <IdentCon UId="63" />
+      <NameCon UId="88" Name="iIn6" />
+    </Wire>
+    <Wire UId="231">
+      <IdentCon UId="64" />
+      <NameCon UId="88" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="232">
+      <OpenCon UId="119" />
+      <NameCon UId="88" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="233">
+      <IdentCon UId="65" />
+      <NameCon UId="88" Name="iText6" />
+    </Wire>
+    <Wire UId="234">
+      <IdentCon UId="66" />
+      <NameCon UId="88" Name="iIn7" />
+    </Wire>
+    <Wire UId="235">
+      <IdentCon UId="67" />
+      <NameCon UId="88" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="236">
+      <OpenCon UId="120" />
+      <NameCon UId="88" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="237">
+      <IdentCon UId="68" />
+      <NameCon UId="88" Name="iText7" />
+    </Wire>
+    <Wire UId="238">
+      <IdentCon UId="69" />
+      <NameCon UId="88" Name="iIn8" />
+    </Wire>
+    <Wire UId="239">
+      <OpenCon UId="121" />
+      <NameCon UId="88" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="240">
+      <OpenCon UId="122" />
+      <NameCon UId="88" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="241">
+      <OpenCon UId="123" />
+      <NameCon UId="88" Name="iText8" />
+    </Wire>
+    <Wire UId="242">
+      <NameCon UId="88" Name="oValid" />
+      <OpenCon UId="124" />
+    </Wire>
+    <Wire UId="243">
+      <NameCon UId="88" Name="oBusy" />
+      <OpenCon UId="125" />
+    </Wire>
+    <Wire UId="244">
+      <NameCon UId="88" Name="oError" />
+      <OpenCon UId="126" />
+    </Wire>
+    <Wire UId="245">
+      <NameCon UId="88" Name="oStatus" />
+      <OpenCon UId="127" />
+    </Wire>
+    <Wire UId="246">
+      <NameCon UId="88" Name="oDiagnostic" />
+      <OpenCon UId="128" />
+    </Wire>
+    <Wire UId="247">
+      <NameCon UId="88" Name="oSim" />
+      <OpenCon UId="129" />
+    </Wire>
+    <Wire UId="248">
+      <NameCon UId="88" Name="oOutput" />
+      <OpenCon UId="130" />
+    </Wire>
+    <Wire UId="249">
+      <OpenCon UId="131" />
+      <NameCon UId="90" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="250">
+      <OpenCon UId="132" />
+      <NameCon UId="90" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="251">
+      <IdentCon UId="70" />
+      <NameCon UId="90" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="252">
+      <IdentCon UId="71" />
+      <NameCon UId="90" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="253">
+      <IdentCon UId="72" />
+      <NameCon UId="90" Name="iIn1" />
+    </Wire>
+    <Wire UId="254">
+      <IdentCon UId="73" />
+      <NameCon UId="90" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="255">
+      <OpenCon UId="133" />
+      <NameCon UId="90" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="256">
+      <IdentCon UId="74" />
+      <NameCon UId="90" Name="iText1" />
+    </Wire>
+    <Wire UId="257">
+      <IdentCon UId="75" />
+      <NameCon UId="90" Name="iIn2" />
+    </Wire>
+    <Wire UId="258">
+      <IdentCon UId="76" />
+      <NameCon UId="90" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="259">
+      <OpenCon UId="134" />
+      <NameCon UId="90" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="260">
+      <IdentCon UId="77" />
+      <NameCon UId="90" Name="iText2" />
+    </Wire>
+    <Wire UId="261">
+      <IdentCon UId="78" />
+      <NameCon UId="90" Name="iIn3" />
+    </Wire>
+    <Wire UId="262">
+      <OpenCon UId="135" />
+      <NameCon UId="90" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="263">
+      <OpenCon UId="136" />
+      <NameCon UId="90" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="264">
+      <OpenCon UId="137" />
+      <NameCon UId="90" Name="iText3" />
+    </Wire>
+    <Wire UId="265">
+      <IdentCon UId="79" />
+      <NameCon UId="90" Name="iIn4" />
+    </Wire>
+    <Wire UId="266">
+      <OpenCon UId="138" />
+      <NameCon UId="90" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="267">
+      <OpenCon UId="139" />
+      <NameCon UId="90" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="268">
+      <OpenCon UId="140" />
+      <NameCon UId="90" Name="iText4" />
+    </Wire>
+    <Wire UId="269">
+      <IdentCon UId="80" />
+      <NameCon UId="90" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="270">
+      <IdentCon UId="81" />
+      <NameCon UId="90" Name="iIn5" />
+    </Wire>
+    <Wire UId="271">
+      <OpenCon UId="141" />
+      <NameCon UId="90" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="272">
+      <OpenCon UId="142" />
+      <NameCon UId="90" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="273">
+      <OpenCon UId="143" />
+      <NameCon UId="90" Name="iText5" />
+    </Wire>
+    <Wire UId="274">
+      <IdentCon UId="82" />
+      <NameCon UId="90" Name="iIn6" />
+    </Wire>
+    <Wire UId="275">
+      <OpenCon UId="144" />
+      <NameCon UId="90" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="276">
+      <OpenCon UId="145" />
+      <NameCon UId="90" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="277">
+      <OpenCon UId="146" />
+      <NameCon UId="90" Name="iText6" />
+    </Wire>
+    <Wire UId="278">
+      <IdentCon UId="83" />
+      <NameCon UId="90" Name="iIn7" />
+    </Wire>
+    <Wire UId="279">
+      <OpenCon UId="147" />
+      <NameCon UId="90" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="280">
+      <OpenCon UId="148" />
+      <NameCon UId="90" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="281">
+      <OpenCon UId="149" />
+      <NameCon UId="90" Name="iText7" />
+    </Wire>
+    <Wire UId="282">
+      <IdentCon UId="84" />
+      <NameCon UId="90" Name="iIn8" />
+    </Wire>
+    <Wire UId="283">
+      <OpenCon UId="150" />
+      <NameCon UId="90" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="284">
+      <OpenCon UId="151" />
+      <NameCon UId="90" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="285">
+      <OpenCon UId="152" />
+      <NameCon UId="90" Name="iText8" />
+    </Wire>
+    <Wire UId="286">
+      <NameCon UId="90" Name="oValid" />
+      <OpenCon UId="153" />
+    </Wire>
+    <Wire UId="287">
+      <NameCon UId="90" Name="oBusy" />
+      <OpenCon UId="154" />
+    </Wire>
+    <Wire UId="288">
+      <NameCon UId="90" Name="oError" />
+      <OpenCon UId="155" />
+    </Wire>
+    <Wire UId="289">
+      <NameCon UId="90" Name="oStatus" />
+      <OpenCon UId="156" />
+    </Wire>
+    <Wire UId="290">
+      <NameCon UId="90" Name="oDiagnostic" />
+      <OpenCon UId="157" />
+    </Wire>
+    <Wire UId="291">
+      <NameCon UId="90" Name="oSim" />
+      <OpenCon UId="158" />
+    </Wire>
+    <Wire UId="292">
+      <NameCon UId="90" Name="oOutput" />
+      <IdentCon UId="85" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Demande de Dégivrage</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P11_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P11_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P11'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P12_1_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P12_1_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P12.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P12_2_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P12_2_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P12.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P12_3_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P12_3_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P13_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P13_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P13'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P14_CSG_TT_AREP" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P14_CSG_TT_AREP" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P14'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P15_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P15_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P15'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="PF_P16_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PF_P16_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="47">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P16'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="Def_Prio_AGBT1" />
+      </Symbol>
+    </Access>
+    <Call UId="49">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="50">
+          <Component Name="COM_IL_DEF_PRIO1_AGBT1" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="67">
+      <Powerrail />
+      <NameCon UId="49" Name="en" />
+    </Wire>
+    <Wire UId="68">
+      <OpenCon UId="51" />
+      <NameCon UId="49" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="69">
+      <OpenCon UId="52" />
+      <NameCon UId="49" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="21" />
+      <NameCon UId="49" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="22" />
+      <NameCon UId="49" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="23" />
+      <NameCon UId="49" Name="iIn1" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="24" />
+      <NameCon UId="49" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="74">
+      <OpenCon UId="53" />
+      <NameCon UId="49" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="25" />
+      <NameCon UId="49" Name="iText1" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="26" />
+      <NameCon UId="49" Name="iIn2" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="27" />
+      <NameCon UId="49" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="78">
+      <OpenCon UId="54" />
+      <NameCon UId="49" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="28" />
+      <NameCon UId="49" Name="iText2" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="29" />
+      <NameCon UId="49" Name="iIn3" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="30" />
+      <NameCon UId="49" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="82">
+      <OpenCon UId="55" />
+      <NameCon UId="49" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="31" />
+      <NameCon UId="49" Name="iText3" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="32" />
+      <NameCon UId="49" Name="iIn4" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="33" />
+      <NameCon UId="49" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="86">
+      <OpenCon UId="56" />
+      <NameCon UId="49" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="34" />
+      <NameCon UId="49" Name="iText4" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="35" />
+      <NameCon UId="49" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="36" />
+      <NameCon UId="49" Name="iIn5" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="37" />
+      <NameCon UId="49" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="91">
+      <OpenCon UId="57" />
+      <NameCon UId="49" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="92">
+      <IdentCon UId="38" />
+      <NameCon UId="49" Name="iText5" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="39" />
+      <NameCon UId="49" Name="iIn6" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="40" />
+      <NameCon UId="49" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="95">
+      <OpenCon UId="58" />
+      <NameCon UId="49" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="41" />
+      <NameCon UId="49" Name="iText6" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="42" />
+      <NameCon UId="49" Name="iIn7" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="43" />
+      <NameCon UId="49" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="99">
+      <OpenCon UId="59" />
+      <NameCon UId="49" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="44" />
+      <NameCon UId="49" Name="iText7" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="45" />
+      <NameCon UId="49" Name="iIn8" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="46" />
+      <NameCon UId="49" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="103">
+      <OpenCon UId="60" />
+      <NameCon UId="49" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="104">
+      <IdentCon UId="47" />
+      <NameCon UId="49" Name="iText8" />
+    </Wire>
+    <Wire UId="105">
+      <NameCon UId="49" Name="oValid" />
+      <OpenCon UId="61" />
+    </Wire>
+    <Wire UId="106">
+      <NameCon UId="49" Name="oBusy" />
+      <OpenCon UId="62" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="49" Name="oError" />
+      <OpenCon UId="63" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="49" Name="oStatus" />
+      <OpenCon UId="64" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="49" Name="oDiagnostic" />
+      <OpenCon UId="65" />
+    </Wire>
+    <Wire UId="110">
+      <NameCon UId="49" Name="oSim" />
+      <OpenCon UId="66" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="49" Name="oOutput" />
+      <IdentCon UId="48" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="16" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Défaut prioritaire AGBT1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="19" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P11_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P11_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P11'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P12_1_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P12_1_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P12.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P12_2_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P12_2_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P12.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P12_3_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P12_3_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P12.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P13_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P13_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P13'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P14_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P14_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P14'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P16_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P16_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P16'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="Def_Non_Prio_AGBT1" />
+      </Symbol>
+    </Access>
+    <Call UId="47">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="48">
+          <Component Name="COM_IL_DEF_NON_PRIO1_AGBT1" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="67">
+      <Powerrail />
+      <NameCon UId="47" Name="en" />
+    </Wire>
+    <Wire UId="68">
+      <OpenCon UId="49" />
+      <NameCon UId="47" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="69">
+      <OpenCon UId="50" />
+      <NameCon UId="47" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="21" />
+      <NameCon UId="47" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="22" />
+      <NameCon UId="47" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="23" />
+      <NameCon UId="47" Name="iIn1" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="24" />
+      <NameCon UId="47" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="74">
+      <OpenCon UId="51" />
+      <NameCon UId="47" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="25" />
+      <NameCon UId="47" Name="iText1" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="26" />
+      <NameCon UId="47" Name="iIn2" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="27" />
+      <NameCon UId="47" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="78">
+      <OpenCon UId="52" />
+      <NameCon UId="47" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="28" />
+      <NameCon UId="47" Name="iText2" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="29" />
+      <NameCon UId="47" Name="iIn3" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="30" />
+      <NameCon UId="47" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="82">
+      <OpenCon UId="53" />
+      <NameCon UId="47" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="31" />
+      <NameCon UId="47" Name="iText3" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="32" />
+      <NameCon UId="47" Name="iIn4" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="33" />
+      <NameCon UId="47" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="86">
+      <OpenCon UId="54" />
+      <NameCon UId="47" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="34" />
+      <NameCon UId="47" Name="iText4" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="35" />
+      <NameCon UId="47" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="36" />
+      <NameCon UId="47" Name="iIn5" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="37" />
+      <NameCon UId="47" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="91">
+      <OpenCon UId="55" />
+      <NameCon UId="47" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="92">
+      <IdentCon UId="38" />
+      <NameCon UId="47" Name="iText5" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="39" />
+      <NameCon UId="47" Name="iIn6" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="40" />
+      <NameCon UId="47" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="95">
+      <OpenCon UId="56" />
+      <NameCon UId="47" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="41" />
+      <NameCon UId="47" Name="iText6" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="42" />
+      <NameCon UId="47" Name="iIn7" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="43" />
+      <NameCon UId="47" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="99">
+      <OpenCon UId="57" />
+      <NameCon UId="47" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="44" />
+      <NameCon UId="47" Name="iText7" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="45" />
+      <NameCon UId="47" Name="iIn8" />
+    </Wire>
+    <Wire UId="102">
+      <OpenCon UId="58" />
+      <NameCon UId="47" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="103">
+      <OpenCon UId="59" />
+      <NameCon UId="47" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="104">
+      <OpenCon UId="60" />
+      <NameCon UId="47" Name="iText8" />
+    </Wire>
+    <Wire UId="105">
+      <NameCon UId="47" Name="oValid" />
+      <OpenCon UId="61" />
+    </Wire>
+    <Wire UId="106">
+      <NameCon UId="47" Name="oBusy" />
+      <OpenCon UId="62" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="47" Name="oError" />
+      <OpenCon UId="63" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="47" Name="oStatus" />
+      <OpenCon UId="64" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="47" Name="oDiagnostic" />
+      <OpenCon UId="65" />
+    </Wire>
+    <Wire UId="110">
+      <NameCon UId="47" Name="oSim" />
+      <OpenCon UId="66" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="47" Name="oOutput" />
+      <IdentCon UId="46" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Défaut NON prioritaire AGBT1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P1_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P1_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P2_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P2_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P3_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P3_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P4_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P4_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P4'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P5_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P5_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P5'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P6_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P6_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P6'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P7_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P7_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P7'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="PF_P8_CSG_TT_CAIS" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PF_P8_CSG_TT_CAIS" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="47">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="48">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="PF_P9_CSG_TT" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="PF_P9_CSG_TT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P9'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="PF_P10_1_CSG_TT_AREP" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="PF_P10_1_CSG_TT_AREP" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P10.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="PF_P10_2_CSG_TT_AREP" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="PF_P10_2_CSG_TT_AREP" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="58">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P10.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="PF_P10_3_CSG_TT_AREP" />
+        <Component Name="oLimitAl0Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="PF_P10_3_CSG_TT_AREP" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="61">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P10.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="62">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="COM_IL_DEF_PRIO1_AGBT2" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="COM_IL_DEF_PRIO1_AGBT2" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="65">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'T° Haute P1-P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="66">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="67">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="68">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>''</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="69">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="70">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="71">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>''</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="72">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="73">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="74">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>''</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="75">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="Def_Prio_AGBT2" />
+      </Symbol>
+    </Access>
+    <Call UId="76">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="77">
+          <Component Name="COM_IL_DEF_PRIO1_AGBT2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="78">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="79">
+          <Component Name="COM_IL_DEF_PRIO2_AGBT2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="113">
+      <Powerrail />
+      <NameCon UId="76" Name="en" />
+    </Wire>
+    <Wire UId="114">
+      <OpenCon UId="80" />
+      <NameCon UId="76" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="115">
+      <OpenCon UId="81" />
+      <NameCon UId="76" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="116">
+      <IdentCon UId="21" />
+      <NameCon UId="76" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="117">
+      <IdentCon UId="22" />
+      <NameCon UId="76" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="118">
+      <IdentCon UId="23" />
+      <NameCon UId="76" Name="iIn1" />
+    </Wire>
+    <Wire UId="119">
+      <IdentCon UId="24" />
+      <NameCon UId="76" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="120">
+      <OpenCon UId="82" />
+      <NameCon UId="76" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="121">
+      <IdentCon UId="25" />
+      <NameCon UId="76" Name="iText1" />
+    </Wire>
+    <Wire UId="122">
+      <IdentCon UId="26" />
+      <NameCon UId="76" Name="iIn2" />
+    </Wire>
+    <Wire UId="123">
+      <IdentCon UId="27" />
+      <NameCon UId="76" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="124">
+      <OpenCon UId="83" />
+      <NameCon UId="76" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="125">
+      <IdentCon UId="28" />
+      <NameCon UId="76" Name="iText2" />
+    </Wire>
+    <Wire UId="126">
+      <IdentCon UId="29" />
+      <NameCon UId="76" Name="iIn3" />
+    </Wire>
+    <Wire UId="127">
+      <IdentCon UId="30" />
+      <NameCon UId="76" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="128">
+      <OpenCon UId="84" />
+      <NameCon UId="76" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="129">
+      <IdentCon UId="31" />
+      <NameCon UId="76" Name="iText3" />
+    </Wire>
+    <Wire UId="130">
+      <IdentCon UId="32" />
+      <NameCon UId="76" Name="iIn4" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="33" />
+      <NameCon UId="76" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="132">
+      <OpenCon UId="85" />
+      <NameCon UId="76" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="133">
+      <IdentCon UId="34" />
+      <NameCon UId="76" Name="iText4" />
+    </Wire>
+    <Wire UId="134">
+      <IdentCon UId="35" />
+      <NameCon UId="76" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="135">
+      <IdentCon UId="36" />
+      <NameCon UId="76" Name="iIn5" />
+    </Wire>
+    <Wire UId="136">
+      <IdentCon UId="37" />
+      <NameCon UId="76" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="137">
+      <OpenCon UId="86" />
+      <NameCon UId="76" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="138">
+      <IdentCon UId="38" />
+      <NameCon UId="76" Name="iText5" />
+    </Wire>
+    <Wire UId="139">
+      <IdentCon UId="39" />
+      <NameCon UId="76" Name="iIn6" />
+    </Wire>
+    <Wire UId="140">
+      <IdentCon UId="40" />
+      <NameCon UId="76" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="141">
+      <OpenCon UId="87" />
+      <NameCon UId="76" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="41" />
+      <NameCon UId="76" Name="iText6" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="42" />
+      <NameCon UId="76" Name="iIn7" />
+    </Wire>
+    <Wire UId="144">
+      <IdentCon UId="43" />
+      <NameCon UId="76" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="145">
+      <OpenCon UId="88" />
+      <NameCon UId="76" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="44" />
+      <NameCon UId="76" Name="iText7" />
+    </Wire>
+    <Wire UId="147">
+      <IdentCon UId="45" />
+      <NameCon UId="76" Name="iIn8" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="46" />
+      <NameCon UId="76" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="149">
+      <OpenCon UId="89" />
+      <NameCon UId="76" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="150">
+      <IdentCon UId="47" />
+      <NameCon UId="76" Name="iText8" />
+    </Wire>
+    <Wire UId="151">
+      <NameCon UId="76" Name="eno" />
+      <NameCon UId="78" Name="en" />
+    </Wire>
+    <Wire UId="152">
+      <NameCon UId="76" Name="oValid" />
+      <OpenCon UId="90" />
+    </Wire>
+    <Wire UId="153">
+      <NameCon UId="76" Name="oBusy" />
+      <OpenCon UId="91" />
+    </Wire>
+    <Wire UId="154">
+      <NameCon UId="76" Name="oError" />
+      <OpenCon UId="92" />
+    </Wire>
+    <Wire UId="155">
+      <NameCon UId="76" Name="oStatus" />
+      <OpenCon UId="93" />
+    </Wire>
+    <Wire UId="156">
+      <NameCon UId="76" Name="oDiagnostic" />
+      <OpenCon UId="94" />
+    </Wire>
+    <Wire UId="157">
+      <NameCon UId="76" Name="oSim" />
+      <OpenCon UId="95" />
+    </Wire>
+    <Wire UId="158">
+      <NameCon UId="76" Name="oOutput" />
+      <OpenCon UId="96" />
+    </Wire>
+    <Wire UId="159">
+      <OpenCon UId="97" />
+      <NameCon UId="78" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="160">
+      <OpenCon UId="98" />
+      <NameCon UId="78" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="161">
+      <IdentCon UId="48" />
+      <NameCon UId="78" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="49" />
+      <NameCon UId="78" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="50" />
+      <NameCon UId="78" Name="iIn1" />
+    </Wire>
+    <Wire UId="164">
+      <IdentCon UId="51" />
+      <NameCon UId="78" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="165">
+      <OpenCon UId="99" />
+      <NameCon UId="78" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="166">
+      <IdentCon UId="52" />
+      <NameCon UId="78" Name="iText1" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="53" />
+      <NameCon UId="78" Name="iIn2" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="54" />
+      <NameCon UId="78" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="169">
+      <OpenCon UId="100" />
+      <NameCon UId="78" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="170">
+      <IdentCon UId="55" />
+      <NameCon UId="78" Name="iText2" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="56" />
+      <NameCon UId="78" Name="iIn3" />
+    </Wire>
+    <Wire UId="172">
+      <IdentCon UId="57" />
+      <NameCon UId="78" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="173">
+      <OpenCon UId="101" />
+      <NameCon UId="78" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="174">
+      <IdentCon UId="58" />
+      <NameCon UId="78" Name="iText3" />
+    </Wire>
+    <Wire UId="175">
+      <IdentCon UId="59" />
+      <NameCon UId="78" Name="iIn4" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="60" />
+      <NameCon UId="78" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="177">
+      <OpenCon UId="102" />
+      <NameCon UId="78" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="178">
+      <IdentCon UId="61" />
+      <NameCon UId="78" Name="iText4" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="62" />
+      <NameCon UId="78" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="63" />
+      <NameCon UId="78" Name="iIn5" />
+    </Wire>
+    <Wire UId="181">
+      <IdentCon UId="64" />
+      <NameCon UId="78" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="182">
+      <OpenCon UId="103" />
+      <NameCon UId="78" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="183">
+      <IdentCon UId="65" />
+      <NameCon UId="78" Name="iText5" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="66" />
+      <NameCon UId="78" Name="iIn6" />
+    </Wire>
+    <Wire UId="185">
+      <IdentCon UId="67" />
+      <NameCon UId="78" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="186">
+      <OpenCon UId="104" />
+      <NameCon UId="78" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="187">
+      <IdentCon UId="68" />
+      <NameCon UId="78" Name="iText6" />
+    </Wire>
+    <Wire UId="188">
+      <IdentCon UId="69" />
+      <NameCon UId="78" Name="iIn7" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="70" />
+      <NameCon UId="78" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="190">
+      <OpenCon UId="105" />
+      <NameCon UId="78" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="191">
+      <IdentCon UId="71" />
+      <NameCon UId="78" Name="iText7" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="72" />
+      <NameCon UId="78" Name="iIn8" />
+    </Wire>
+    <Wire UId="193">
+      <IdentCon UId="73" />
+      <NameCon UId="78" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="194">
+      <OpenCon UId="106" />
+      <NameCon UId="78" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="195">
+      <IdentCon UId="74" />
+      <NameCon UId="78" Name="iText8" />
+    </Wire>
+    <Wire UId="196">
+      <NameCon UId="78" Name="oValid" />
+      <OpenCon UId="107" />
+    </Wire>
+    <Wire UId="197">
+      <NameCon UId="78" Name="oBusy" />
+      <OpenCon UId="108" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="78" Name="oError" />
+      <OpenCon UId="109" />
+    </Wire>
+    <Wire UId="199">
+      <NameCon UId="78" Name="oStatus" />
+      <OpenCon UId="110" />
+    </Wire>
+    <Wire UId="200">
+      <NameCon UId="78" Name="oDiagnostic" />
+      <OpenCon UId="111" />
+    </Wire>
+    <Wire UId="201">
+      <NameCon UId="78" Name="oSim" />
+      <OpenCon UId="112" />
+    </Wire>
+    <Wire UId="202">
+      <NameCon UId="78" Name="oOutput" />
+      <IdentCon UId="75" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Défaut prioritaire AGBT2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PF_P1_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PF_P1_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PF_P2_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PF_P2_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PF_P3_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PF_P3_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PF_P4_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PF_P4_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P4'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PF_P6_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PF_P6_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P6'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="PF_P7_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PF_P7_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P7'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PF_P8_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="PF_P8_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="44">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="PF_P9_ETDF_VENT" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PF_P9_ETDF_VENT" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="47">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P9'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="48">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="PF_P10_1_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="PF_P10_1_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil P10.1'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="PF_P10_2_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="PF_P10_2_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P10.2'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="PF_P10_3_ETDF_TURB_GV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="PF_P10_3_ETDF_TURB_GV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="58">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P10.3'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="COM_IL_DEF_NON_PRIO1_AGBT2" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="COM_IL_DEF_NON_PRIO1_AGBT2" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="61">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def Ventil  P1-P9'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="62">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>FALSE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="PF_P8_DEF_OH_DEGIV" />
+        <Component Name="oOutput" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="PF_P8_DEF_OH_DEGIV" />
+        <Component Name="oSim" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="65">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'Def RES Dégic P8'</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="66">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="67">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="68">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="69">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="70">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="71">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="72">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="Def_Non_Prio_AGBT2" />
+      </Symbol>
+    </Access>
+    <Call UId="74">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="75">
+          <Component Name="COM_IL_DEF_NON_PRIO1_AGBT2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="76">
+      <CallInfo Name="LTU_Ilock4x2" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="77">
+          <Component Name="COM_IL_DEF_NON_PRIO2_AGBT2" />
+        </Instance>
+        <Parameter Name="iEnableBlock" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableSim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableTotalAnd" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableP1And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iIn1Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn1" Section="Input" Type="Bool" />
+        <Parameter Name="iText1" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iIn2Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn2" Section="Input" Type="Bool" />
+        <Parameter Name="iText2" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iIn3Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn3" Section="Input" Type="Bool" />
+        <Parameter Name="iText3" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iIn4Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn4" Section="Input" Type="Bool" />
+        <Parameter Name="iText4" Section="Input" Type="String[20]" />
+        <Parameter Name="iEnableP2And" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iIn5Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn5" Section="Input" Type="Bool" />
+        <Parameter Name="iText5" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iIn6Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn6" Section="Input" Type="Bool" />
+        <Parameter Name="iText6" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iIn7Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn7" Section="Input" Type="Bool" />
+        <Parameter Name="iText7" Section="Input" Type="String[20]" />
+        <Parameter Name="iIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iIn8Sim" Section="Input" Type="Bool" />
+        <Parameter Name="iEnableNegIn8" Section="Input" Type="Bool" />
+        <Parameter Name="iText8" Section="Input" Type="String[20]" />
+        <Parameter Name="oValid" Section="Output" Type="Bool" />
+        <Parameter Name="oBusy" Section="Output" Type="Bool" />
+        <Parameter Name="oError" Section="Output" Type="Bool" />
+        <Parameter Name="oStatus" Section="Output" Type="Word" />
+        <Parameter Name="oDiagnostic" Section="Output" Type="&quot;LTU_DiagnoticUdt&quot;" />
+        <Parameter Name="oSim" Section="Output" Type="Bool" />
+        <Parameter Name="oOutput" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="113">
+      <Powerrail />
+      <NameCon UId="74" Name="en" />
+    </Wire>
+    <Wire UId="114">
+      <OpenCon UId="78" />
+      <NameCon UId="74" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="115">
+      <OpenCon UId="79" />
+      <NameCon UId="74" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="116">
+      <IdentCon UId="21" />
+      <NameCon UId="74" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="117">
+      <IdentCon UId="22" />
+      <NameCon UId="74" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="118">
+      <IdentCon UId="23" />
+      <NameCon UId="74" Name="iIn1" />
+    </Wire>
+    <Wire UId="119">
+      <IdentCon UId="24" />
+      <NameCon UId="74" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="120">
+      <OpenCon UId="80" />
+      <NameCon UId="74" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="121">
+      <IdentCon UId="25" />
+      <NameCon UId="74" Name="iText1" />
+    </Wire>
+    <Wire UId="122">
+      <IdentCon UId="26" />
+      <NameCon UId="74" Name="iIn2" />
+    </Wire>
+    <Wire UId="123">
+      <IdentCon UId="27" />
+      <NameCon UId="74" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="124">
+      <OpenCon UId="81" />
+      <NameCon UId="74" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="125">
+      <IdentCon UId="28" />
+      <NameCon UId="74" Name="iText2" />
+    </Wire>
+    <Wire UId="126">
+      <IdentCon UId="29" />
+      <NameCon UId="74" Name="iIn3" />
+    </Wire>
+    <Wire UId="127">
+      <IdentCon UId="30" />
+      <NameCon UId="74" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="128">
+      <OpenCon UId="82" />
+      <NameCon UId="74" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="129">
+      <IdentCon UId="31" />
+      <NameCon UId="74" Name="iText3" />
+    </Wire>
+    <Wire UId="130">
+      <IdentCon UId="32" />
+      <NameCon UId="74" Name="iIn4" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="33" />
+      <NameCon UId="74" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="132">
+      <OpenCon UId="83" />
+      <NameCon UId="74" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="133">
+      <IdentCon UId="34" />
+      <NameCon UId="74" Name="iText4" />
+    </Wire>
+    <Wire UId="134">
+      <IdentCon UId="35" />
+      <NameCon UId="74" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="135">
+      <IdentCon UId="36" />
+      <NameCon UId="74" Name="iIn5" />
+    </Wire>
+    <Wire UId="136">
+      <IdentCon UId="37" />
+      <NameCon UId="74" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="137">
+      <OpenCon UId="84" />
+      <NameCon UId="74" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="138">
+      <IdentCon UId="38" />
+      <NameCon UId="74" Name="iText5" />
+    </Wire>
+    <Wire UId="139">
+      <IdentCon UId="39" />
+      <NameCon UId="74" Name="iIn6" />
+    </Wire>
+    <Wire UId="140">
+      <IdentCon UId="40" />
+      <NameCon UId="74" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="141">
+      <OpenCon UId="85" />
+      <NameCon UId="74" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="41" />
+      <NameCon UId="74" Name="iText6" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="42" />
+      <NameCon UId="74" Name="iIn7" />
+    </Wire>
+    <Wire UId="144">
+      <IdentCon UId="43" />
+      <NameCon UId="74" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="145">
+      <OpenCon UId="86" />
+      <NameCon UId="74" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="44" />
+      <NameCon UId="74" Name="iText7" />
+    </Wire>
+    <Wire UId="147">
+      <IdentCon UId="45" />
+      <NameCon UId="74" Name="iIn8" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="46" />
+      <NameCon UId="74" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="149">
+      <OpenCon UId="87" />
+      <NameCon UId="74" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="150">
+      <IdentCon UId="47" />
+      <NameCon UId="74" Name="iText8" />
+    </Wire>
+    <Wire UId="151">
+      <NameCon UId="74" Name="eno" />
+      <NameCon UId="76" Name="en" />
+    </Wire>
+    <Wire UId="152">
+      <NameCon UId="74" Name="oValid" />
+      <OpenCon UId="88" />
+    </Wire>
+    <Wire UId="153">
+      <NameCon UId="74" Name="oBusy" />
+      <OpenCon UId="89" />
+    </Wire>
+    <Wire UId="154">
+      <NameCon UId="74" Name="oError" />
+      <OpenCon UId="90" />
+    </Wire>
+    <Wire UId="155">
+      <NameCon UId="74" Name="oStatus" />
+      <OpenCon UId="91" />
+    </Wire>
+    <Wire UId="156">
+      <NameCon UId="74" Name="oDiagnostic" />
+      <OpenCon UId="92" />
+    </Wire>
+    <Wire UId="157">
+      <NameCon UId="74" Name="oSim" />
+      <OpenCon UId="93" />
+    </Wire>
+    <Wire UId="158">
+      <NameCon UId="74" Name="oOutput" />
+      <OpenCon UId="94" />
+    </Wire>
+    <Wire UId="159">
+      <OpenCon UId="95" />
+      <NameCon UId="76" Name="iEnableBlock" />
+    </Wire>
+    <Wire UId="160">
+      <OpenCon UId="96" />
+      <NameCon UId="76" Name="iEnableSim" />
+    </Wire>
+    <Wire UId="161">
+      <IdentCon UId="48" />
+      <NameCon UId="76" Name="iEnableTotalAnd" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="49" />
+      <NameCon UId="76" Name="iEnableP1And" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="50" />
+      <NameCon UId="76" Name="iIn1" />
+    </Wire>
+    <Wire UId="164">
+      <IdentCon UId="51" />
+      <NameCon UId="76" Name="iIn1Sim" />
+    </Wire>
+    <Wire UId="165">
+      <OpenCon UId="97" />
+      <NameCon UId="76" Name="iEnableNegIn1" />
+    </Wire>
+    <Wire UId="166">
+      <IdentCon UId="52" />
+      <NameCon UId="76" Name="iText1" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="53" />
+      <NameCon UId="76" Name="iIn2" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="54" />
+      <NameCon UId="76" Name="iIn2Sim" />
+    </Wire>
+    <Wire UId="169">
+      <OpenCon UId="98" />
+      <NameCon UId="76" Name="iEnableNegIn2" />
+    </Wire>
+    <Wire UId="170">
+      <IdentCon UId="55" />
+      <NameCon UId="76" Name="iText2" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="56" />
+      <NameCon UId="76" Name="iIn3" />
+    </Wire>
+    <Wire UId="172">
+      <IdentCon UId="57" />
+      <NameCon UId="76" Name="iIn3Sim" />
+    </Wire>
+    <Wire UId="173">
+      <OpenCon UId="99" />
+      <NameCon UId="76" Name="iEnableNegIn3" />
+    </Wire>
+    <Wire UId="174">
+      <IdentCon UId="58" />
+      <NameCon UId="76" Name="iText3" />
+    </Wire>
+    <Wire UId="175">
+      <IdentCon UId="59" />
+      <NameCon UId="76" Name="iIn4" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="60" />
+      <NameCon UId="76" Name="iIn4Sim" />
+    </Wire>
+    <Wire UId="177">
+      <OpenCon UId="100" />
+      <NameCon UId="76" Name="iEnableNegIn4" />
+    </Wire>
+    <Wire UId="178">
+      <IdentCon UId="61" />
+      <NameCon UId="76" Name="iText4" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="62" />
+      <NameCon UId="76" Name="iEnableP2And" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="63" />
+      <NameCon UId="76" Name="iIn5" />
+    </Wire>
+    <Wire UId="181">
+      <IdentCon UId="64" />
+      <NameCon UId="76" Name="iIn5Sim" />
+    </Wire>
+    <Wire UId="182">
+      <OpenCon UId="101" />
+      <NameCon UId="76" Name="iEnableNegIn5" />
+    </Wire>
+    <Wire UId="183">
+      <IdentCon UId="65" />
+      <NameCon UId="76" Name="iText5" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="66" />
+      <NameCon UId="76" Name="iIn6" />
+    </Wire>
+    <Wire UId="185">
+      <IdentCon UId="67" />
+      <NameCon UId="76" Name="iIn6Sim" />
+    </Wire>
+    <Wire UId="186">
+      <IdentCon UId="68" />
+      <NameCon UId="76" Name="iEnableNegIn6" />
+    </Wire>
+    <Wire UId="187">
+      <OpenCon UId="102" />
+      <NameCon UId="76" Name="iText6" />
+    </Wire>
+    <Wire UId="188">
+      <IdentCon UId="69" />
+      <NameCon UId="76" Name="iIn7" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="70" />
+      <NameCon UId="76" Name="iIn7Sim" />
+    </Wire>
+    <Wire UId="190">
+      <IdentCon UId="71" />
+      <NameCon UId="76" Name="iEnableNegIn7" />
+    </Wire>
+    <Wire UId="191">
+      <OpenCon UId="103" />
+      <NameCon UId="76" Name="iText7" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="72" />
+      <NameCon UId="76" Name="iIn8" />
+    </Wire>
+    <Wire UId="193">
+      <OpenCon UId="104" />
+      <NameCon UId="76" Name="iIn8Sim" />
+    </Wire>
+    <Wire UId="194">
+      <OpenCon UId="105" />
+      <NameCon UId="76" Name="iEnableNegIn8" />
+    </Wire>
+    <Wire UId="195">
+      <OpenCon UId="106" />
+      <NameCon UId="76" Name="iText8" />
+    </Wire>
+    <Wire UId="196">
+      <NameCon UId="76" Name="oValid" />
+      <OpenCon UId="107" />
+    </Wire>
+    <Wire UId="197">
+      <NameCon UId="76" Name="oBusy" />
+      <OpenCon UId="108" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="76" Name="oError" />
+      <OpenCon UId="109" />
+    </Wire>
+    <Wire UId="199">
+      <NameCon UId="76" Name="oStatus" />
+      <OpenCon UId="110" />
+    </Wire>
+    <Wire UId="200">
+      <NameCon UId="76" Name="oDiagnostic" />
+      <OpenCon UId="111" />
+    </Wire>
+    <Wire UId="201">
+      <NameCon UId="76" Name="oSim" />
+      <OpenCon UId="112" />
+    </Wire>
+    <Wire UId="202">
+      <NameCon UId="76" Name="oOutput" />
+      <IdentCon UId="73" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="28" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="29" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM Défaut NON prioritaire AGBT2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Clock_1Hz" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="22">
+      <Constant>
+        <ConstantValue>W#16#103</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Remote</ConstantType>
+        <ConstantValue>P#DB500.DBX0.0 BYTE 4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Any</ConstantType>
+        <ConstantValue>P#DB500.DBX5.0 BYTE 4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="GET_PF" />
+        <Component Name="NDR" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="26">
+      <Constant>
+        <ConstantValue>W#16#103</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Remote</ConstantType>
+        <ConstantValue>P#DB510.DBX0.0 BYTE 4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Any</ConstantType>
+        <ConstantValue>P#DB510.DBX0.0 BYTE 4</ConstantValue>
+      </Constant>
+    </Access>
+    <Part Name="GET" Version="1.3" UId="29">
+      <Instance Scope="GlobalVariable" UId="30">
+        <Component Name="GET_PF" />
+      </Instance>
+      <TemplateValue Name="remote_type" Type="Type">Remote</TemplateValue>
+      <TemplateValue Name="local_type" Type="Type">Variant</TemplateValue>
+    </Part>
+    <Part Name="PUT" Version="1.3" UId="31">
+      <Instance Scope="GlobalVariable" UId="32">
+        <Component Name="PUT_PF" />
+      </Instance>
+      <TemplateValue Name="remote_type" Type="Type">Remote</TemplateValue>
+      <TemplateValue Name="local_type" Type="Type">Variant</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="51">
+      <Powerrail />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="REQ" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="ID" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="ADDR_1" />
+    </Wire>
+    <Wire UId="55">
+      <OpenCon UId="33" />
+      <NameCon UId="29" Name="ADDR_2" />
+    </Wire>
+    <Wire UId="56">
+      <OpenCon UId="34" />
+      <NameCon UId="29" Name="ADDR_3" />
+    </Wire>
+    <Wire UId="57">
+      <OpenCon UId="35" />
+      <NameCon UId="29" Name="ADDR_4" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="RD_1" />
+    </Wire>
+    <Wire UId="59">
+      <OpenCon UId="36" />
+      <NameCon UId="29" Name="RD_2" />
+    </Wire>
+    <Wire UId="60">
+      <OpenCon UId="37" />
+      <NameCon UId="29" Name="RD_3" />
+    </Wire>
+    <Wire UId="61">
+      <OpenCon UId="38" />
+      <NameCon UId="29" Name="RD_4" />
+    </Wire>
+    <Wire UId="62">
+      <NameCon UId="29" Name="eno" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="63">
+      <NameCon UId="29" Name="NDR" />
+      <OpenCon UId="39" />
+    </Wire>
+    <Wire UId="64">
+      <NameCon UId="29" Name="ERROR" />
+      <OpenCon UId="40" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="29" Name="STATUS" />
+      <OpenCon UId="41" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="REQ" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="26" />
+      <NameCon UId="31" Name="ID" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="27" />
+      <NameCon UId="31" Name="ADDR_1" />
+    </Wire>
+    <Wire UId="69">
+      <OpenCon UId="42" />
+      <NameCon UId="31" Name="ADDR_2" />
+    </Wire>
+    <Wire UId="70">
+      <OpenCon UId="43" />
+      <NameCon UId="31" Name="ADDR_3" />
+    </Wire>
+    <Wire UId="71">
+      <OpenCon UId="44" />
+      <NameCon UId="31" Name="ADDR_4" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="28" />
+      <NameCon UId="31" Name="SD_1" />
+    </Wire>
+    <Wire UId="73">
+      <OpenCon UId="45" />
+      <NameCon UId="31" Name="SD_2" />
+    </Wire>
+    <Wire UId="74">
+      <OpenCon UId="46" />
+      <NameCon UId="31" Name="SD_3" />
+    </Wire>
+    <Wire UId="75">
+      <OpenCon UId="47" />
+      <NameCon UId="31" Name="SD_4" />
+    </Wire>
+    <Wire UId="76">
+      <NameCon UId="31" Name="DONE" />
+      <OpenCon UId="48" />
+    </Wire>
+    <Wire UId="77">
+      <NameCon UId="31" Name="ERROR" />
+      <OpenCon UId="49" />
+    </Wire>
+    <Wire UId="78">
+      <NameCon UId="31" Name="STATUS" />
+      <OpenCon UId="50" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="32" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="33" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Echange avec API SDM</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="COM_864079-864083" />
+        <Component Name="MotDeVie" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="COM_864083-864079" />
+        <Component Name="MotDeVie" />
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="23" DisabledENO="false">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="24">
+      <Powerrail />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="25">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <NameCon UId="23" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="39" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text>Recopie du mot de vie</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="3C" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="3D" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3E" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

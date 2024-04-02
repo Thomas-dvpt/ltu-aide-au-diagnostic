@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2020-05-06T13:42:23.640Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://HMA_OPC_Exchange</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://HMA_OPC_Exchange" PublicationDate="2020-05-05T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05" />
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Byte">i=3</Alias>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4" />
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="http___HMA_OPC_Exchange" NodeId="ns=1;i=1000" BrowseName="1:http://HMA_OPC_Exchange">
+        <DisplayName>http://HMA_OPC_Exchange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=1001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=1000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2020-05-05T00:00:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://HMA_OPC_Exchange</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=1;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=1;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=1;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;s=OT_&quot;Data_Exchange_01&quot;" BrowseName="1:Data_Exchange_01Type">
+        <DisplayName>Data_Exchange_01Type</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable NodeId="ns=1;i=1017" BrowseName="1:Data_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_01</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_01"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=1022" BrowseName="1:Data_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_02</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_01"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;s=OT_&quot;Data_Exchange_02&quot;" BrowseName="1:Data_Exchange_02Type">
+        <DisplayName>Data_Exchange_02Type</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable NodeId="ns=1;i=1027" BrowseName="1:Data_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_01</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=1028" BrowseName="1:Data_10" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_10</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Byte" NodeId="ns=1;i=1029" BrowseName="1:Data_11" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_11</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;i=1030" BrowseName="1:Data_12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_12</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=1031" BrowseName="1:Data_13" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Data_13</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_Exchange_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=1012" BrowseName="1:Blocs">
+        <DisplayName>Blocs</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1013" BrowseName="1:Groupe_10">
+        <DisplayName>Groupe_10</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1012</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1014" BrowseName="1:Groupe_20">
+        <DisplayName>Groupe_20</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1012</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1018" BrowseName="1:Groupe_21">
+        <DisplayName>Groupe_21</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1014</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1019" BrowseName="1:Tags">
+        <DisplayName>Tags</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+	<UAObjectType NodeId="ns=1;s=OT_&quot;Data_OPC_01&quot;" BrowseName="1:Data_OPC_01Type">
+		<DisplayName>Data_OPC_01Type</DisplayName>
+		<References>
+			<Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+		</References>
+	</UAObjectType>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;Data_OPC_01&quot;.&quot;Parametre_01&quot;" BrowseName="1:Parametre_01" ParentNodeId="ns=1;s=&quot;Data_OPC_01&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_01</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="Data_OPC_01"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_01.Parametre_01"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=&quot;Data_OPC_01&quot;.&quot;Parametre_02&quot;" BrowseName="1:Parametre_02" ParentNodeId="ns=1;s=&quot;Data_OPC_01&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="Data_OPC_01"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_01.Parametre_02"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAObject NodeId="ns=1;s=&quot;Data_OPC_01&quot;" BrowseName="1:Data_OPC_01">
+        <DisplayName>Data_OPC_01</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;s=OT_"Data_OPC_01"</Reference>
+        </References>
+    </UAObject>
+    <UAObjectType NodeId="ns=1;s=OT_&quot;Data_OPC_02&quot;" BrowseName="1:Data_OPC_02Type">
+        <DisplayName>Data_OPC_02Type</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=1023" BrowseName="1:Parametre_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_01</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_OPC_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=1024" BrowseName="1:Parametre_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=OT_"Data_OPC_02"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=1039" BrowseName="1:Groupe_01">
+        <DisplayName>Groupe_01</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1009" BrowseName="1:Data_OPC_02">
+        <DisplayName>Data_OPC_02</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1018</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1025" BrowseName="1:Parametre_03">
+        <DisplayName>Parametre_03</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1009</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Float" NodeId="ns=1;s=&quot;Data_OPC_02&quot;.Parametre_02" BrowseName="1:Parametre_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1009</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_02.Parametre_02"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;Data_OPC_02&quot;.&quot;Parametre_03.Parametre_01&quot;" BrowseName="1:Parametre_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_01</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1025</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_02.Parametre_03.Parametre_01"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;s=&quot;Data_OPC_02&quot;.&quot;Parametre_03.Parametre_03&quot;" BrowseName="1:Parametre_03" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_03</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1025</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_02.Parametre_03.Parametre_03"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;s=&quot;Data_OPC_02&quot;.&quot;Parametre_03.Parametre_04&quot;" BrowseName="1:Parametre_04" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_04</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1025</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Data_OPC_02.Parametre_03.Parametre_04"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Entree_01" BrowseName="1:Entree_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Entree_01</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Entree_01"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Entree_02" BrowseName="1:Entree_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Entree_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Entree_02"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Parametre_01" BrowseName="1:Parametre_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_01</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Parametre_01"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Parametre_02" BrowseName="1:Parametre_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Parametre_02"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Float" ValueRank="-2" NodeId="ns=1;s=Parametre_03" BrowseName="1:Parametre_03" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Parametre_03</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Parametre_03"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Sortie_01" BrowseName="1:Sortie_01" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Sortie_01</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Sortie_01"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ValueRank="-2" NodeId="ns=1;s=Sortie_02" BrowseName="1:Sortie_02" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Sortie_02</DisplayName>
+        <Description>OPCUA:</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"Mapping_OPC_Server"."Sortie_02"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+</UANodeSet>

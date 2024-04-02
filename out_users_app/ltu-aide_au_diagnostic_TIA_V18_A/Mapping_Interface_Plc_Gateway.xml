@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2020-05-06T13:42:23.640Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://HMA_OPC_Exchange</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://HMA_OPC_Exchange" PublicationDate="2020-05-05T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Byte">i=3</Alias>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="Int32">i=6</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4"/>
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="http___HMA_OPC_Exchange" NodeId="ns=1;i=1000" BrowseName="1:http://HMA_OPC_Exchange">
+        <DisplayName>http://HMA_OPC_Exchange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=1001" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=1000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2020-05-05T00:00:00Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1003" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://HMA_OPC_Exchange</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=1000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=1;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=1;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=1000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=1;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=1200" BrowseName="1:PCT">
+        <DisplayName>PCT</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1202" BrowseName="1:System">
+        <DisplayName>System</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=1249" BrowseName="1:Variables_PLC_H">
+        <DisplayName>Variables_PLC_H</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=1202</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObjectType NodeId="ns=1;s=OT_&quot;08NCH-B-S03-PRES-001&quot;" BrowseName="1:08NCH-B-S03-PRES-001Type">
+        <DisplayName>08NCH-B-S03-PRES-001Type</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=OT_&quot;09BVC-B-S02-PRES-002&quot;" BrowseName="1:09BVC-B-S02-PRES-002Type">
+        <DisplayName>09BVC-B-S02-PRES-002Type</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" BrowseName="1:08NCH-B-S03-PRES-001">
+        <DisplayName>08NCH-B-S03-PRES-001</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1200</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;s=OT_"08NCH-B-S03-PRES-001"</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" BrowseName="1:09BVC-B-S02-PRES-002">
+        <DisplayName>09BVC-B-S02-PRES-002</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1200</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;s=OT_"09BVC-B-S02-PRES-002"</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil1&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil1" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil1</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil1"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil2&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil2" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil2</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.AlarmeTempTransfoAuxSeuil2"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.SynthDefRelaisSondeProtectTSA&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.SynthDefRelaisSondeProtectTSA" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.SynthDefRelaisSondeProtectTSA</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.SynthDefRelaisSondeProtectTSA"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.Valeur_INT&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.Valeur_INT" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.Valeur_INT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.Valeur_INT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int32" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.Valeur_DINT&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.Valeur_DINT" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.Valeur_DINT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.Valeur_DINT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;.&quot;SYS-G13-B10-TSAP-01.0002.Valeur_Flottant&quot;" BrowseName="1:SYS-G13-B10-TSAP-01.0002.Valeur_Flottant" ParentNodeId="ns=1;s=&quot;08NCH-B-S03-PRES-001&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-B10-TSAP-01.0002.Valeur_Flottant</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="08NCH-B-S03-PRES-001"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."08NCH-B-S03-PRES-001.SYS-G13-B10-TSAP-01.0002.Valeur_Flottant"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;SYS-G13-xxx-IPAR-01.0004.IPONPositionOuverte&quot;" BrowseName="1:SYS-G13-xxx-IPAR-01.0004.IPONPositionOuverte" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-xxx-IPAR-01.0004.IPONPositionOuverte</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.SYS-G13-xxx-IPAR-01.0004.IPONPositionOuverte"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;SYS-G13-xxx-IPAR-01.0004.IPONPositionFermee&quot;" BrowseName="1:SYS-G13-xxx-IPAR-01.0004.IPONPositionFermee" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-xxx-IPAR-01.0004.IPONPositionFermee</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.SYS-G13-xxx-IPAR-01.0004.IPONPositionFermee"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;SYS-G13-xxx-IPAR-01.0004.AutorCmdDistancePCT&quot;" BrowseName="1:SYS-G13-xxx-IPAR-01.0004.AutorCmdDistancePCT" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-xxx-IPAR-01.0004.AutorCmdDistancePCT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.SYS-G13-xxx-IPAR-01.0004.AutorCmdDistancePCT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;SYS-G13-xxx-IPAR-01.0004.CmdFermetureIPAR&quot;" BrowseName="1:SYS-G13-xxx-IPAR-01.0004.CmdFermetureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-xxx-IPAR-01.0004.CmdFermetureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.SYS-G13-xxx-IPAR-01.0004.CmdFermetureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;SYS-G13-xxx-IPAR-01.0004.CmdOuvertureIPAR&quot;" BrowseName="1:SYS-G13-xxx-IPAR-01.0004.CmdOuvertureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SYS-G13-xxx-IPAR-01.0004.CmdOuvertureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.SYS-G13-xxx-IPAR-01.0004.CmdOuvertureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0042.IPONPositionOuverte&quot;" BrowseName="1:0041.0042.IPONPositionOuverte" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0042.IPONPositionOuverte</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0042.IPONPositionOuverte"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0042.IPONPositionFermee&quot;" BrowseName="1:0041.0042.IPONPositionFermee" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0042.IPONPositionFermee</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0042.IPONPositionFermee"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0042.AutorCmdDistancePCT&quot;" BrowseName="1:0041.0042.AutorCmdDistancePCT" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0042.AutorCmdDistancePCT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0042.AutorCmdDistancePCT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0042.CmdFermetureIPAR&quot;" BrowseName="1:0041.0042.CmdFermetureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0042.CmdFermetureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0042.CmdFermetureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0042.CmdOuvertureIPAR&quot;" BrowseName="1:0041.0042.CmdOuvertureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0042.CmdOuvertureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0042.CmdOuvertureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0043.0044.IPONPositionOuverte&quot;" BrowseName="1:0041.0043.0044.IPONPositionOuverte" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0043.0044.IPONPositionOuverte</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0043.0044.IPONPositionOuverte"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0043.0044.IPONPositionFermee&quot;" BrowseName="1:0041.0043.0044.IPONPositionFermee" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0043.0044.IPONPositionFermee</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0043.0044.IPONPositionFermee"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0043.0044.AutorCmdDistancePCT&quot;" BrowseName="1:0041.0043.0044.AutorCmdDistancePCT" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0043.0044.AutorCmdDistancePCT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0043.0044.AutorCmdDistancePCT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0043.0044.CmdFermetureIPAR&quot;" BrowseName="1:0041.0043.0044.CmdFermetureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0043.0044.CmdFermetureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0043.0044.CmdFermetureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;0041.0043.0044.CmdOuvertureIPAR&quot;" BrowseName="1:0041.0043.0044.CmdOuvertureIPAR" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>0041.0043.0044.CmdOuvertureIPAR</DisplayName>
+        <Description>PCT-TC:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.0041.0043.0044.CmdOuvertureIPAR"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int32" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;Variable_Unitaire&quot;" BrowseName="1:Variable_Unitaire" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Variable_Unitaire</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.Variable_Unitaire"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.Valeur_01&quot;" BrowseName="1:HMA_Instance.Valeur_01" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.Valeur_01</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.Valeur_01"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int32" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.Valeur_02&quot;" BrowseName="1:HMA_Instance.Valeur_02" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.Valeur_02</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.Valeur_02"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil1&quot;" BrowseName="1:HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil1" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil1</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil1"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil2&quot;" BrowseName="1:HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil2" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil2</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.AlarmeTempTransfoAuxSeuil2"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.SynthDefRelaisSondeProtectTSA&quot;" BrowseName="1:HMA_Instance.MyStruct.001.SynthDefRelaisSondeProtectTSA" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.SynthDefRelaisSondeProtectTSA</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.SynthDefRelaisSondeProtectTSA"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.Valeur_INT&quot;" BrowseName="1:HMA_Instance.MyStruct.001.Valeur_INT" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.Valeur_INT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.Valeur_INT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int32" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.Valeur_DINT&quot;" BrowseName="1:HMA_Instance.MyStruct.001.Valeur_DINT" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.Valeur_DINT</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.Valeur_DINT"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;.&quot;HMA_Instance.MyStruct.001.Valeur_Flottant&quot;" BrowseName="1:HMA_Instance.MyStruct.001.Valeur_Flottant" ParentNodeId="ns=1;s=&quot;09BVC-B-S02-PRES-002&quot;" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HMA_Instance.MyStruct.001.Valeur_Flottant</DisplayName>
+        <Description>PCT-TK:</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s="09BVC-B-S02-PRES-002"</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"Mapping_OPC_Server"."09BVC-B-S02-PRES-002.HMA_Instance.MyStruct.001.Valeur_Flottant"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=ServiceLevel" BrowseName="1:ServiceLevel" UserAccessLevel="3" AccessLevel="1">
+        <DisplayName>ServiceLevel</DisplayName>
+        <Description>Service level de la redondance OPC UA</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."iServiceLevel"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;s=EnableWriteToPLCH" BrowseName="1:EnableWriteToPLCH" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>EnableWriteToPLCH</DisplayName>
+        <Description>Valide l'écriture dans le PLC H distant</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."bEnableWriteToPLCH"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=ServerStatus" BrowseName="1:ServerStatus" UserAccessLevel="3" AccessLevel="1">
+        <DisplayName>ServerStatus</DisplayName>
+        <Description>Status du serveur OPC au niveau du PLC H distant</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."iServerStatus"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=PLC_H_Redundant_State" BrowseName="1:PLC_H_Redundant_State" UserAccessLevel="3" AccessLevel="1">
+        <DisplayName>PLC_H_Redundant_State</DisplayName>
+        <Description>Etat de la redondance du PLC_H</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."iPLC_H_Redundant_State"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=PLc_CPU_1_State" BrowseName="1:PLc_CPU_1_State" UserAccessLevel="3" AccessLevel="1">
+        <DisplayName>PLc_CPU_1_State</DisplayName>
+        <Description>Etat de la CPU 1 du PLC H</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."iPLc_CPU_1_State"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=1;s=PLc_CPU_2_State" BrowseName="1:PLc_CPU_2_State" UserAccessLevel="3" AccessLevel="1">
+        <DisplayName>PLc_CPU_2_State</DisplayName>
+        <Description>Etat de la CPU 2 du PLC H</Description>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1249</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Extensions>
+            <Extension>
+                <si:VariableMapping>"OPC_UA_Server_State"."iPLc_CPU_2_State"</si:VariableMapping>
+            </Extension>
+        </Extensions>
+    </UAVariable>
+    </UANodeSet>
